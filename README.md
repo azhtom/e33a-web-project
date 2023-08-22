@@ -13,7 +13,7 @@ En el terminal colocar `npm run serve` para correr el servidor de desarrollo. En
 
 ## Servidor API de Prueba (Express/Mocks)
 
-En el terminar colocar `npm run start:api`
+En el terminar colocar `npm run start:server`
 
 ## Code scaffolding
 
