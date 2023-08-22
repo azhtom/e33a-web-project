@@ -19,70 +19,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-4 portfolio-item">
+            <div class="col-sm-6 col-md-4 portfolio-item" *ngFor="let p in projects">
                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid" src="assets/img/proyects/proyect-Adina.jpg"></a>
+                    </div><img class="img-fluid" src="{{p.image}}"></a>
                 <div class="portfolio-caption">
-                    <h4>Adina</h4>
-                    <p class="text-muted"><strong><em>Desde S/.310 300</em><br></strong></p>
-                    <p class="text-muted">Av. Alcazar 538 - Miraflores</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid" src="assets/img/proyects/proyect-Boulogne.jpg"></a>
-                <div class="portfolio-caption">
-                    <h4>Boulogne</h4>
-                    <p class="text-muted"><strong><em>Desde S/.421 200</em><br></strong></p>
-                    <p class="text-muted">Av. Arica 615 - Breña</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid" src="assets/img/proyects/proyect-Collins.jpg"></a>
-                <div class="portfolio-caption">
-                    <h4>Collings</h4>
-                    <p class="text-muted"><strong><em>Desde S/.449 400</em><br></strong></p>
-                    <p class="text-muted">Av. Sucre 461 - San Isidro</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid" src="assets/img/proyects/proyect-PacificHighway.jpg"></a>
-                <div class="portfolio-caption">
-                    <h4>Pacific Highway</h4>
-                    <p class="text-muted"><strong><em>Desde S/.501 000</em><br></strong></p>
-                    <p class="text-muted">Av. Donizetti 986 - San Borja</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid img-fluid" src="assets/img/proyects/proyect-Thomas.jpg"></a>
-                <div class="portfolio-caption">
-                    <h4>Thomas</h4>
-                    <p class="text-muted"><strong><em>Desde S/.511 000</em><br></strong></p>
-                    <p class="text-muted">Av. Palermo 283 - La Victoria</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div><img class="img-fluid" src="assets/img/proyects/proyect-Timber.jpg"></a>
-                <div class="portfolio-caption">
-                    <h4>Timber</h4>
-                    <p class="text-muted"><strong><em>Desde S/.544 000</em><br></strong></p>
-                    <p class="text-muted">Av. San Diego 736 - Ate</p>
+                    <h4>{{p.name}}</h4>
+                    <p class="text-muted"><strong><em>{{p.price}}</em><br></strong></p>
+                    <p class="text-muted">{{p.address}}</p>
                 </div>
             </div>
         </div>
