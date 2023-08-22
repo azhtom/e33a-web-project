@@ -1,0 +1,47 @@
+<div class="container" style="padding-top: 120px;">
+    <h3>Contactenos</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore magni iste, et sint dolorum excepturi atque expedita minima, quis doloremque distinctio at quaerat obcaecati consectetur quasi deleniti nesciunt optio impedit?
+    </p>
+    <div class="row">
+        <div class="col-6">
+            <form [formGroup]="contactusForm">
+                <div formGroupName="persona">
+                    <div class="form-group">
+                        <label>Nombres:</label>
+                        <input type="text" formControlName="nombres" class="form-control" placeholder="Ingrese nombres...">
+                    </div>
+                    <div class="form-group">
+                        <label>Apellidos:</label>
+                        <input type="text" formControlName="apellidos" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" formControlName="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Comentarios:</label>
+                    <textarea formControlName="comentarios" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <button (click)="__onsubmit()" class="btn btn-primary">Enviar</button>
+                </div>
+                <!-- <div>
+                    <p>
+                        Datos del Formulario: {{ contactusForm.value | json }}
+                    </p>
+                    <p>
+                        Formulario Valido: {{ contactusForm.valid }}
+                    </p>
+                </div> -->
+            </form>
+        </div>
+        <div class="col-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.115886544763!2d-76.968285519887!3d-12.104218312363647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c70ab77498c1%3A0xcce9f50642e7c684!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas!5e0!3m2!1ses-419!2spe!4v1692066833669!5m2!1ses-419!2spe" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>
+                <b>Telefono:</b> 999-999-999
+            </p>
+        </div>
+    </div>
+</div>
