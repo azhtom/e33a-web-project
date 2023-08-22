@@ -10,9 +10,12 @@ export class HomeComponent {
 
   constructor(private readonly ps: ProjectService) {}
 
+  projects :any = [];
+
   getProjects() {
     this.ps.getProjects().subscribe((rest: any) => {
-      console.log(rest);
+      this.projects = rest.data;
+      console.log(this.projects);
     })
   }
 
